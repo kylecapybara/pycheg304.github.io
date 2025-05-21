@@ -1,8 +1,0 @@
-project:
-  title: "py_func"
-  type: website
-  output-dir: docs
-
-website:
-  title: "cheg304 python"
-  search: true
