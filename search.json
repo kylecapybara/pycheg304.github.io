@@ -14,7 +14,7 @@
     "href": "pythonfunctionoftheday.html#randn",
     "title": "Python function of the day",
     "section": "2.1 randn",
-    "text": "2.1 randn\nthe first ever matlab function of the day was on week 1 wednesday and it was matlab’s randn, a function that takes in an array size and returns an array of that size filled with normally distributed random numbers. the python version is numpy.random.randn see the documentation here, but here are some simple examples\n\n2.1.1 generating 5 random numbers\n\nimport numpy as np\nnp.random.randn(5)\n\narray([ 0.70775804,  0.95854058, -0.85273114,  1.08647208,  0.80996223])\n\n\n\n\n2.1.2 generating 3x3 array of random numbers\n\nnp.random.randn(3,3)\n\narray([[-0.91460082,  0.41348596, -2.33369203],\n       [-1.43679709,  0.07024915, -1.74213467],\n       [ 0.90607798, -1.0018556 ,  1.23715038]])",
+    "text": "2.1 randn\nthe first ever matlab function of the day was on week 1 wednesday and it was matlab’s randn, a function that takes in an array size and returns an array of that size filled with normally distributed random numbers. the python version is numpy.random.randn see the documentation here, but here are some simple examples\n\n2.1.1 generating 5 random numbers\n\nimport numpy as np\nnp.random.randn(5)\n\narray([-0.18388066, -0.94347739,  0.48031835,  0.71313056, -0.98437581])\n\n\n\n\n2.1.2 generating 3x3 array of random numbers\n\nnp.random.randn(3,3)\n\narray([[-1.6076068 , -0.72436386,  0.02306269],\n       [-0.30266487, -1.69976604, -1.71430111],\n       [ 1.48505028, -2.24632212, -0.22461656]])",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "pythonfunctionoftheday.html#rand",
     "title": "Python function of the day",
     "section": "2.2 rand",
-    "text": "2.2 rand\nthe second ever matlab function of the day was rand, which takes in array dimensions and returns an array of that size with samples from the uniform distribution between 0 and 1. the python version of this is numpy.random.rand which is functionally the same. see documentation\n\n2.2.1 generating 3 random numbers\n\nnp.random.rand(3)\n\narray([0.5483105 , 0.48830619, 0.24472889])\n\n\n\n\n2.2.2 generating 5x3 array of random numbers\n\nnp.random.rand(5,3)\n\narray([[0.92353201, 0.863304  , 0.46793319],\n       [0.44509029, 0.16569169, 0.47712174],\n       [0.3267074 , 0.21792045, 0.23034987],\n       [0.86958029, 0.72083987, 0.15936911],\n       [0.96312729, 0.09769867, 0.15152276]])",
+    "text": "2.2 rand\nthe second ever matlab function of the day was rand, which takes in array dimensions and returns an array of that size with samples from the uniform distribution between 0 and 1. the python version of this is numpy.random.rand which is functionally the same. see documentation\n\n2.2.1 generating 3 random numbers\n\nnp.random.rand(3)\n\narray([0.85167858, 0.07401149, 0.95162213])\n\n\n\n\n2.2.2 generating 5x3 array of random numbers\n\nnp.random.rand(5,3)\n\narray([[0.7883434 , 0.70033573, 0.80708999],\n       [0.63865275, 0.15007854, 0.65802218],\n       [0.03925671, 0.70635119, 0.09628135],\n       [0.16424599, 0.32556874, 0.07374301],\n       [0.32625414, 0.95422693, 0.81012482]])",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "pythonfunctionoftheday.html#randi",
     "title": "Python function of the day",
     "section": "2.3 randi",
-    "text": "2.3 randi\non week 3 friday the matlab function of the day was randi, which generates a random integer between 1 and the first parameter imax. the closest python function to this is numpy.random.randint which takes in a low, high, and array size (as a tuple!!!!) instead of just taking imax. see documentation\n\n\n\n\n\n\nNote\n\n\n\nThe interval for the pseudorandom integers is \\([\\mathrm{low}, \\mathrm{high})\\)\n\n\n\n2.3.1 generating 3 pseudorandom integers between 0 and 100\nreally [0,100)\n\nnp.random.randint(0,100,3)\n\narray([ 5,  1, 45])\n\n\n\n\n2.3.2 generating a 3x3 array of pseudorandom integers between 5 and 10\nmore specifically [5,10)\n\nnp.random.randint(5,10,(3,3))\n\narray([[6, 7, 9],\n       [6, 6, 6],\n       [5, 6, 6]])",
+    "text": "2.3 randi\non week 3 friday the matlab function of the day was randi, which generates a random integer between 1 and the first parameter imax. the closest python function to this is numpy.random.randint which takes in a low, high, and array size (as a tuple!!!!) instead of just taking imax. see documentation\n\n\n\n\n\n\nNote\n\n\n\nThe interval for the pseudorandom integers is \\([\\mathrm{low}, \\mathrm{high})\\)\n\n\n\n2.3.1 generating 3 pseudorandom integers between 0 and 100\nreally [0,100)\n\nnp.random.randint(0,100,3)\n\narray([85, 20,  0])\n\n\n\n\n2.3.2 generating a 3x3 array of pseudorandom integers between 5 and 10\nmore specifically [5,10)\n\nnp.random.randint(5,10,(3,3))\n\narray([[6, 6, 9],\n       [5, 8, 8],\n       [6, 9, 6]])",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
@@ -154,7 +154,7 @@
     "href": "pythonfunctionoftheday.html#quantile",
     "title": "Python function of the day",
     "section": "4.10 quantile",
-    "text": "4.10 quantile\nuse numpy.quantile\ndocumentation\n\n4.10.1 the 95th percentile of 50000 samples from z distribution\n\nvector = np.random.randn(50000)\nnp.quantile(vector, 0.95)\n\n1.6331956692283367",
+    "text": "4.10 quantile\nuse numpy.quantile\ndocumentation\n\n4.10.1 the 95th percentile of 50000 samples from z distribution\n\nvector = np.random.randn(50000)\nnp.quantile(vector, 0.95)\n\n1.643512194841922",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
@@ -164,7 +164,7 @@
     "href": "pythonfunctionoftheday.html#skewness-kurtosis",
     "title": "Python function of the day",
     "section": "4.11 skewness, kurtosis",
-    "text": "4.11 skewness, kurtosis\nuse scipy.stats.skew and scipy.stats.kurtosis (or don’t)\n\n4.11.1 skew and kurtosis of 5000 samples from z distribution\n\nfrom scipy.stats import skew\nskew(vector)\n\n-0.00790792177058146\n\n\n\nfrom scipy.stats import kurtosis\nkurtosis(vector)\n\n-0.013520437832118759",
+    "text": "4.11 skewness, kurtosis\nuse scipy.stats.skew and scipy.stats.kurtosis (or don’t)\n\n4.11.1 skew and kurtosis of 5000 samples from z distribution\n\nfrom scipy.stats import skew\nskew(vector)\n\n0.00021570560758344632\n\n\n\nfrom scipy.stats import kurtosis\nkurtosis(vector)\n\n-0.0038758211332297066",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
@@ -224,7 +224,7 @@
     "href": "pythonfunctionoftheday.html#k-means",
     "title": "Python function of the day",
     "section": "8.1 k-means",
-    "text": "8.1 k-means\ni’ll include a quick k-means clustering example. i’ll generate some data that should have 3 clusters on an xy plane.\n\nimport matplotlib.pyplot as plt\n\nn_points = 50 \ncluster1 = 1.8**np.random.randn(n_points, 2) + np.array([0, 0])\ncluster2 = 0.5*np.random.randn(n_points, 2) + np.array([5, 10])\ncluster3 = np.random.randn(n_points, 2) + np.array([0, 5])\nX = np.vstack([cluster1, cluster2, cluster3])\n\nfig, ax = plt.subplots(dpi=300)\nax.scatter(X[:n_points, 0], X[:n_points, 1], label='Cluster 1')\nax.scatter(X[n_points:2*n_points, 0], X[n_points:2*n_points, 1], label='Cluster 2')\nax.scatter(X[2*n_points:, 0], X[2*n_points:, 1], label='Cluster 3')\nax.set(title='Generated Data w/ 3 Clusters', xlabel='$x_1$', ylabel='$x_2$')\nplt.legend();\n\n\n\n\n\n\n\n\nnow importing the appropriate k-means function from sklearn. you may be thinking why does this take in a random state and the answer is that the points where the centroids are initiated are chosen randomly. this random initialization is also why k-means implimentations will usually take in a parameter to say how many random initializations you want to do (since you only ever converge to a local minimum each initialization)\n\nfrom sklearn.cluster import KMeans\nkmeans = KMeans(n_clusters=3, random_state=0, n_init=100).fit(X)\n\nfig, ax = plt.subplots(dpi=300)\nplt.scatter(X[:,0], X[:,1], c=kmeans.labels_)\nax.set(title='$k$-means clustered Data w/ 3 Clusters', xlabel='$x_1$', ylabel='$x_2$');\n\n\n\n\n\n\n\n\nfor this highly idealized data we do an okay job at clustering with the simple and computationally inexpensive k-means!",
+    "text": "8.1 k-means\ni’ll include a quick k-means clustering example. i’ll generate some data that should have 3 clusters on an xy plane.\n\nimport matplotlib.pyplot as plt\n\nn_points = 50 \ncluster1 = 1.8*np.random.randn(n_points, 2) + np.array([0, 0])\ncluster2 = 0.5*np.random.randn(n_points, 2) + np.array([5, 10])\ncluster3 = np.random.randn(n_points, 2) + np.array([0, 5])\nX = np.vstack([cluster1, cluster2, cluster3])\n\nfig, ax = plt.subplots(dpi=300)\nax.scatter(X[:n_points, 0], X[:n_points, 1], label='Cluster 1')\nax.scatter(X[n_points:2*n_points, 0], X[n_points:2*n_points, 1], label='Cluster 2')\nax.scatter(X[2*n_points:, 0], X[2*n_points:, 1], label='Cluster 3')\nax.set(title='Generated Data w/ 3 Clusters', xlabel='$x_1$', ylabel='$x_2$')\nplt.legend();\n\n\n\n\n\n\n\n\nnow importing the appropriate k-means function from sklearn. you may be thinking why does this take in a random state and the answer is that the points where the centroids are initiated are chosen randomly. this random initialization is also why k-means implimentations will usually take in a parameter to say how many random initializations you want to do (since you only ever converge to a local minimum each initialization)\n\nfrom sklearn.cluster import KMeans\nkmeans = KMeans(n_clusters=3, random_state=0, n_init=100).fit(X)\n\nfig, ax = plt.subplots(dpi=300)\nplt.scatter(X[:,0], X[:,1], c=kmeans.labels_)\nax.set(title='$k$-means clustered Data w/ 3 Clusters', xlabel='$x_1$', ylabel='$x_2$');\n\n\n\n\n\n\n\n\nfor this highly idealized data we do an okay job at clustering with the simple and computationally inexpensive k-means!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python function of the day</span>"
     ]
